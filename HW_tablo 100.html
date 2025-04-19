@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice Form</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            padding: 20px;
+        }
+
+        h2 {
+            color: purple;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 2px solid slateblue; /* Koyu mor tablo çizgileri */
+            padding: 8px;
+        }
+
+        th {
+            background-color: #ffffff; 
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .product-name {
+            width: 40%;
+        }
+
+        .color {
+            width: 25%;
+        }
+
+        .quantity {
+            width: 15%;
+        }
+
+        .price {
+            width: 20%;
+        }
+
+        .black-row {
+            background-color: black;
+            height: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Customer Order Form</h2>
+
+    <table>
+        <tr>
+    <td colspan="4">Order Number</td>
+</tr>
+
+        <tr>
+    <td colspan="4">Order Date</td>
+</tr>
+   
+
+    <br>
+
+    
+        <tr>
+            <th class="product-name">Product Name</th>
+            <th class="color">Color</th>
+            <th class="quantity">Quantity</th>
+            <th class="price">Price</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="black-row">
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+              <td colspan="4">Subtotal</td>
+        </tr>
+        <tr>
+             <td colspan="4">Tax</td>
+        </tr>
+        <tr>
+            <td colspan="3">Shipping</td>
+            <td><input type="text" value="5.95"></td>
+        </tr>
+        <tr>
+            <td colspan="4">Total</td>
+        </tr>
+    </table>
+
+</body>
+</html>

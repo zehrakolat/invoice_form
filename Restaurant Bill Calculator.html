@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Restaurant Bill Calculator</h1>
+
+    <form id="billForm">
+        <div class="form-row">
+            <label for="tax">Tax Percent</label>
+            <input type="number" id="tax" name="tax" min="0" max="100" step="0.01" required>
+            <span>%</span>
+        </div>
+
+        <div class="form-row">
+            <label for="price">Price from the Menu</label>
+            <input type="number" id="price" name="price" min="0" max="1000" step="0.01" required>
+            <span>$</span>
+        </div>
+
+        <div class="form-row">
+            <label for="tip">Tip Percent</label>
+            <input type="number" id="tip" name="tip" min="0" max="100" step="1" required>
+            <span>%</span>
+        </div>
+
+        <button type="submit">Calculate Bill</button>
+    </form>
+
+    <div id="result" style="margin-top: 20px;">
+        <h3>Bill Summary</h3>
+        <p><strong>Price:</strong> $<span id="totalPrice"></span></p>
+        <p><strong>Tax:</strong> $<span id="taxAmount"></span></p>
+        <p><strong>Tip Amount:</strong> $<span id="tipAmount"></span></p>
+        <p><strong>Total Bill:</strong> $<span id="totalBill"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
